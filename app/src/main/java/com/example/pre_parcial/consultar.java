@@ -28,6 +28,9 @@ public class consultar extends AppCompatActivity {
         TvResultVieja = findViewById(R.id.tvPersonaVieja);
     }
 
+    /*
+    * cual es la persona mas joven
+    */
     public void personaMasJoven(){
         //ArrayList listPeople = intent.getStringArrayListExtra("listPeople");
         //Serializable list = intent.getSerializableExtra("listPeople");
@@ -35,5 +38,7 @@ public class consultar extends AppCompatActivity {
         {
             System.out.println(listPeople.get(i));
         }*/
+
+
     }
 }
