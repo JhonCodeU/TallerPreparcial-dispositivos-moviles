@@ -87,10 +87,24 @@
         android:id="@+id/btnAdd"
         android:layout_width="141dp"
         android:layout_height="63dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="32dp"
         android:text="Agregar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSalary"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCargo"
         tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/spinnerCargo"
+        android:layout_width="336dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/country_arrays"
+        android:prompt="@string/country_prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSalary" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
