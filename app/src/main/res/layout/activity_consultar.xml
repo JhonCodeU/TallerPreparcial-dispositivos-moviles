@@ -6,4 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".consultar">
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:text="la persona mas joven es:"
+        android:textColor="#0000FF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultMasJoven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:text="la persona mas vieja es:"
+        android:textColor="#0000FF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvPersonaVieja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResultMasJoven" />
+
+    <TextView
+        android:id="@+id/tvResultMasJoven"
+        android:layout_width="318dp"
+        android:layout_height="28dp"
+        android:text="Result persona joven"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/tvPersonaVieja"
+        android:layout_width="318dp"
+        android:layout_height="28dp"
+        android:text="Result persona vieja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="201dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

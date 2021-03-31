@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import com.ib.custom.toast.CustomToastView;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -38,6 +40,9 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
         spinnerCargo = (Spinner)findViewById(R.id.spinnerCargo);
 
         btnAdd.setOnClickListener(this);
+
+        Persona prueba = new Persona("Jhon","Arcila castano","Jhon.380172793@ucaldas.edu.co",22,12000, "Developer");
+        people.add(prueba);
     }
 
     @Override
@@ -65,12 +70,17 @@ public class Register extends AppCompatActivity implements View.OnClickListener{
 
             Intent intel = new Intent(this, consultar.class);
             intel.putExtra("listPeople", people);
-            //persona.putExtra("lasNamePerson", lastName);
-            //persona.putExtra("emailPerson", email);
-            //persona.putExtra("agePerson", age);
-            //persona.putExtra("salaryPerson", salary);
-
+            CustomToastView.makeInfoToast(this,"Se registro correctamente",R.layout.custom_toast).show();
+            clearfields();
         }
 
+    }
+
+    public void clearfields(){
+        txtName.setText("");
+        txtLastName.setText("");
+        txtEmail.setText("");
+        numberAge.setText("");
+        numberSalary.setText("");
     }
 }
